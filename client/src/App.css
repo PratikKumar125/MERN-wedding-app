@@ -1,0 +1,205 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.homeconatiner{
+  width: 100%;
+  height: 90vh;
+  overflow: hidden;
+  position: relative;
+  background:rgba(0,0,0);
+}
+.homeimg{
+  overflow: hidden;
+  position: absolute;
+  width: 100vw;
+  height: 90vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(3px);
+  /* background: linear-gradient(180deg, rgba(12, 12, 12, 0.2) 0%, rgba(0, 0, 0, 0.171875) 37.5%, rgba(0, 0, 0, 0.2) 57.29%, rgba(0, 0, 0, 0.072) 100%); */
+
+}
+.homeimg::after{
+  content: "";
+  background:rgba(0,0,0,0.6);
+  visibility: visible;
+}
+.baring{
+  width: 100%;
+  position: absolute;
+  height: 50px;
+  background:rgba(0,0,0,0.3);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.logo{
+  width: 15%;
+  display: flex;
+  margin-left: 0px;
+  justify-content: space-around;
+  align-items: center;
+}
+.items{
+  width: 52%;
+  display: flex;
+  justify-content: space-around;
+
+}
+.itemsa{
+  padding: 0 10px;
+  /* width: 19%; */
+  position: relative;
+  /* font-weight: bold; */
+  /* font-size: 19px; */
+            /* height: auto; */
+            text-decoration: none;
+            /* padding: 7px; */
+            color: white;
+            font-weight: bold;
+            align-items: center;
+            display: flex;
+            /* font-size: 20px; */
+            font-family: 'Playfair Display', serif;
+            margin: 0 0 0 20px;
+            /* overflow: hidden; */
+            /* background: #000; */
+}
+.itemsa::before{
+            content: "";
+            position: absolute;
+            width: 0%;
+            bottom: -10%;
+            left: 0%;
+            background: rgb(250, 250, 250);
+            visibility: hidden;
+            transform-origin: right;
+            transition: all 0.3s ease-in-out;
+            /* transform: scaleX(0); */
+            height: 2px;
+            /* width: 0; */
+            overflow: hidden;
+}
+.itemsa:hover::before{
+            visibility: visible;
+            width: 50%;
+            left: 50%;
+} 
+.searchbar{
+  width: 15%;
+  /* background-color: rgb(0, 0, 0); */
+  position: relative;
+  height: 100%;
+}
+.searchbar input{
+  /* visibility: hidden; */
+  outline: none;
+  left: 0%;
+  width: 100%;
+  align-items: center;
+  margin: 12px 0;
+  position: absolute;
+  border: 1px solid transparent;
+  border-radius: 300px;
+  outline: hidden;
+  height: 25px;
+  padding: 8px;
+  /* overflow: hidden; */
+  /* transition: .5s ease-in-out; */
+}
+
+.imagecontent{
+  position: relative;
+  /* background: rgb(165, 62, 62); */
+  top: 25%;
+  left: 33%;
+  width: auto;
+  text-align: justify;
+}
+.imagecontent h2{
+  position: absolute;
+  color: rgb(0, 0, 0);
+  width: 400px;
+  /* background: white; */
+  font-size: 31px;
+  text-align: center; 
+
+}
+@keyframes headings {
+  from{
+    opacity: 0;
+    color: honeydew;
+  }
+  to{
+    opacity: 100%;
+    color: rgb(255, 255, 255);
+  }
+}
+.spancont{
+  animation: headings 3s infinite ease;
+  width: 600px;
+  /* background: #000; */
+  position: absolute;
+  color: rgb(255, 255, 255);
+  /* margin: 190px 0 0 0; */
+  margin-left: 0;
+  left: -24%;
+  margin-top: 20px;
+}
+.custom-select{
+  position: absolute;
+  width: 300px;
+  height: 35px;
+  margin-top: 150px;
+  left: 4%;
+}
+select{
+  width: 300px;
+  position: absolute;
+  height: 35px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  background: white;
+  outline: none;
+}
+option{
+  color: rgb(2, 2, 2);
+  padding: 5px;
+  background-color: #ffffff;
+}
+.loginsys{
+  position: absolute;
+  top: 62%;
+  width: 50px;
+  height: 50px;
+  left: 46.3%;
+}
+.logas1{
+  position: absolute;
+  top: 75%;
+  left: 42%;
+  text-decoration: none;
+  color: #000000;
+  font-size: 15px;
+  background-color: #ffffff;
+  border-radius: 3px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border: 1px solid white;
+  padding: 3px 10px 3px 10px;
+}
+.logas2{
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  text-decoration: none;
+  color: #000000;
+  font-size: 15px;
+  background-color: #ffffff;
+  border-radius: 3px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border: 1px solid white;
+  padding: 3px 10px 3px 10px;
+}

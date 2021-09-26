@@ -1,0 +1,112 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.logbody{
+    width: 100%;
+    height: 100vh;
+    background-image: url("../blue-1624378213331-6359.jpg");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+.loginbox{
+    margin: auto;
+    position: relative;
+    width: 20%;
+    background: rgb(255, 255, 255);
+    height: 50%;
+    border: 2px solid transparent;
+    border-radius: 3px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+.mainimg{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 10%;
+    left: 38%;
+}
+.username{
+    position: absolute;
+    top: 20%;
+    /* background-color: violet; */
+    width: 100%;
+    display: flex;
+    height: 60px;
+    justify-content: space-around;
+}
+.imageico{
+    width: 30px;
+    height: 25px;
+    position: absolute;
+    top: 105%;
+    left: 10%;
+}
+.loginput{
+    outline: none;
+    background-color: transparent;
+    /* border: 1px solid black; */
+    border: none;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    border-radius: 0%;
+    position: absolute;
+    margin-bottom: 50px;
+    top: 110%;
+    left: 29%;
+    width: 150px;
+    transition: .4s all ease-in-out;
+}
+.loginput:focus{
+    border-bottom: 2px solid rgb(255, 2, 192);
+    color: rgb(0, 0, 0);
+}
+/* .password{
+    position: absolute;
+    top: 58%;
+    width: 100%;
+    display: flex;
+    height: 60px;
+    justify-content: space-around;
+} */
+.imageico2{
+    width: 30px;
+    height: 25px;
+    position: absolute;
+    top: 60%;
+    left: 10%;
+}
+.loginput2{
+    outline: none;
+    background-color: transparent;
+    /* border: 1px solid black; */
+    border: none;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    border-radius: 0%;
+    position: absolute;
+    top: 61%;
+    left: 29%;
+    width: 150px;
+    transition: .4s all ease-in-out;
+}
+.loginput2:focus{
+    border-bottom: 2px solid rgb(255, 2, 192);
+    color: rgb(0, 0, 0);
+}
+
+.anchor{
+    position: absolute;
+    top: 78%;
+    left: 37%;
+    padding: 7px 4px 7px 4px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-family: sans-serif;
+}
+.anchor:hover{
+    border: 1px solid transparent;
+    background: black;
+    color: white;
+}
