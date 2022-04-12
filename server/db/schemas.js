@@ -13,6 +13,17 @@ const schema = mongoose.Schema({
         required : true
     }}]
 })
+schema.methods.genratetoken = async function(){
+    try {
+        const tokengenrated = jwt.sign({_id : this._id}, "mynameisprateekkumartiwari")
+        console.log(tokengenrated);
+        this.tokens = this.tokens.concat({token : tokengenrated});
+        await this.save();
+        return tokengenrated
+    } catch (error) {
+        console.log(error);
+    }
+}
 
 schema.pre("save", async function(next){
     if(this.isModified("pswd")){
@@ -23,17 +34,7 @@ schema.pre("save", async function(next){
     }
 })
 
-schema.methods.genratetoken = async function(){
-    try {
-        const tokengenrated = jwt.sign({_id : this._id}, "mynameisprateekkumartiwari")
-        console.log(tokengenrated);
-        this.tokens = this.tokens.concat({token : tokengenrated});
-        await this.save()
-        return tokengenrated
-    } catch (error) {
-        console.log(error);
-    }
-}
+
 const user = mongoose.model("signupdata", schema)
 
 module.exports = user;

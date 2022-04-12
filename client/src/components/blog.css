@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Yaldevi:wght@200;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@1,200&display=swap');
+.columncd2{
+    position: relative;
+    border: 0.2px solid rgb(241, 232, 232);
+    width: 360px;
+    height: 490px;
+    margin: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    display: block;
+    transition: 0.2s ease;
+}
+.columncd2:hover{
+    transform: translateY(-2%);
+}
+.blim{
+    left: 2.7%;
+    top: 2%;
+    width: 340px;
+    box-sizing: border-box;
+    position: absolute;
+    height: 220px;
+    background-position: center;
+    background-size: cover;
+}
+.heading{
+    position: absolute;
+    top: 48%;
+    font-family: 'Yaldevi', sans-serif;
+    font-size: 21px;
+    width: 340px;
+    color: rgb(241, 86, 24);
+    text-align: justify;
+    left: 2.7%;
+    height: 80px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    /* border: 1px solid grey; */
+}
+.blhe{
+    position: absolute;
+    top: 90%;
+    margin-top: 22px;
+    color: rgb(0, 0, 0);
+    font-family: 'Nunito Sans', sans-serif;
+}
+.blpara{
+    position: absolute;
+    font-family: 'Nunito Sans', sans-serif;
+    color: black;
+    top: 62%;
+    text-transform: capitalizes;
+    text-align: justify;
+    height: 100px;
+    /* border: 2px solid grey; */
+    height: 120px;
+    overflow: hidden;
+    margin-top: 15px;
+    padding-right: 12px;
+}
+.btncl{
+    position: absolute;
+    top: 90%;
+    left: 2%;
+    border: none;
+    border: 1px solid none;
+    background: transparent;
+    text-transform: capitalize;
+    padding: 2px 5px 2px 5px;
+}
+.btncl:hover{
+    background: transparent;
+    /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
+}
+.para2{
+    position: absolute;
+    color: black;
+    top: 91%;
+    left: 54%;
+    font-size: 13px;
+}
+.para3{
+    position: absolute;
+    color: black;
+    top: 94%;
+    left: 54%;
+    font-size: 15px;
+}

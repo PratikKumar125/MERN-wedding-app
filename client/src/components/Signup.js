@@ -14,6 +14,7 @@ export default function Signup() {
     }
 
     const register = async() => {
+        console.log("at signup react");
         await axios.post("http://localhost:8000/signup", {uname: signupdata.username, pswd: signupdata.password, gmail : signupdata.mail, contact : signupdata.contact})
         console.log("saving data is done");
         console.log(signupdata);

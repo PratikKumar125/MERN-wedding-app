@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Pacifico&family=Rubik&display=swap');
+.maindiv{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.forrightleft{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+}
+.mainbix{
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+    width: 420px;
+    height: 450px;
+    /* border: 1px solid red; */
+    margin: 50px 20px 50px 50px;
+    overflow: hidden;
+    /* transition: 2s ease; */
+}
+.cardimg{
+    position: absolute;
+    overflow: hidden;
+    width: 420px;
+    height: 450px;
+    background: linear-gradient(180deg, red, blue);
+    filter: brightness(80%);
+    object-fit: cover;
+    transition: 2s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.mainbix h2{
+    position: absolute;
+    font-family: 'Rubik', sans-serif;
+    font-size: 25px;
+    margin: 15px 8px 5px 17px;
+    /* border: 1px solid blue; */
+    color: rgb(247, 240, 240);
+    top: 60%;
+    font-weight: bold;
+    transition: 1s ease-in-out;
+}
+.mainbix p{
+    position: absolute;
+    top: 79%;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    margin-left: 17px;
+    color: rgb(255, 255, 255);
+    transition: 1s ease-in-out;
+    /* transition: 2s ease-in-out; */
+
+}
+.mainbix h5{
+    position: absolute;
+    color: white;
+    top: 86%;
+    margin-left: 17px;
+    transition: 1s ease-in-out;
+    /* transition: 2s ease-in-out; */
+}
+.mainbix:hover .cardimg{
+    transform: scale(1.3);
+    filter: brightness(30%);
+}
+.lowerpart{
+    visibility: hidden;
+    position: relative;
+    width: 420px;
+    height: 450px;
+    top: -200%;
+    transition: 1s ease-in-out;
+
+}
+.lowerpart h2{
+    position: absolute;
+    top: 60%;
+    font-family: 'Rubik', sans-serif;
+    font-size: 25px;
+    margin: 15px 8px 5px 17px;
+    font-weight: bold;
+}
+.lowerpart a{
+    text-decoration: none;
+    position: absolute;
+    top: 79%;
+    left: 39%;
+    color: rgb(0, 0, 0);
+    border: 1px solid transparent;
+    border-radius: 8px;
+    padding: 7px 15px 7px 15px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+.mainbix:hover p{
+    visibility: hidden;
+    top: 100%;
+}
+.mainbix:hover h5{
+    visibility: hidden;
+    top: 100%;
+}
+.mainbix:hover .h2ofmainbox{
+    visibility: hidden;
+    top: 100%;
+}
+
+.mainbix:hover .lowerpart{
+    visibility: visible;
+    top: -20%;
+}
+
+
+.row2{
+    display: block;
+}
+.mainbix2{
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+    width: 420px;
+    height: 300px;
+    /* border: 1px solid red; */
+    margin: 50px 0px 0px 0px;
+    overflow: hidden;
+    /* transition: 2s ease; */
+}
+.cardimg{
+    position: absolute;
+    overflow: hidden;
+    width: 420px;
+    height: 450px;
+    background: linear-gradient(180deg, red, blue);
+    filter: brightness(80%);
+    object-fit: cover;
+    transition: 2s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.mainbix2 h2{
+    position: absolute;
+    font-family: 'Rubik', sans-serif;
+    font-size: 25px;
+    margin: 15px 8px 5px 17px;
+    /* border: 1px solid blue; */
+    color: rgb(247, 240, 240);
+    top: 50%;
+    font-weight: bold;
+    transition: 1s ease-in-out;
+}
+.mainbix2 p{
+    position: absolute;
+    top: 76%;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    margin-left: 17px;
+    color: rgb(255, 255, 255);
+    transition: 1s ease-in-out;
+    /* transition: 2s ease-in-out; */
+
+}
+.mainbix2 h5{
+    position: absolute;
+    color: white;
+    top: 86%;
+    margin-left: 17px;
+    transition: 1s ease-in-out;
+    /* transition: 2s ease-in-out; */
+}
+.mainbix2:hover .cardimg{
+    transform: scale(1.3);
+    filter: brightness(30%);
+}
+.lowerpart{
+    visibility: hidden;
+    position: relative;
+    width: 420px;
+    height: 450px;
+    top: -200%;
+    transition: 1s ease-in-out;
+
+}
+.lowerpart h2{
+    position: absolute;
+    top: 60%;
+    font-family: 'Rubik', sans-serif;
+    font-size: 25px;
+    margin: 15px 8px 5px 17px;
+    font-weight: bold;
+}
+.lowerpart a{
+    text-decoration: none;
+    position: absolute;
+    top: 79%;
+    left: 39%;
+    color: rgb(0, 0, 0);
+    border: 1px solid transparent;
+    border-radius: 8px;
+    padding: 7px 15px 7px 15px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+.mainbix2:hover p{
+    visibility: hidden;
+    top: 100%;
+}
+.mainbix2:hover h5{
+    visibility: hidden;
+    top: 100%;
+}
+.mainbix2:hover .h2ofmainbox{
+    visibility: hidden;
+    top: 100%;
+}
+
+.mainbix2:hover .lowerpart{
+    visibility: visible;
+    top: -58%;
+}
+
+.loweragain{
+    position: absolute;
+    /* margin-top: 25px; */
+    width: 450px;
+    height: 150px;
+    /* border: 1px solid green; */
+    /* background-color: black; */
+    display: flex;
+    margin-left: 50px;
+    flex-direction: row;
+    /* border: 2px solid beige; */
+}
+.loweragain a{
+    /* margin: 20px; */
+    width: 18%;
+    /* border: 5px solid blue; */
+
+}
+.loweragain svg{
+    position: absolute;
+    padding: 18px;
+    color: brown;
+    width: 20%;
+}
+.catchus{
+    width: 330px;
+    /* border: 2px solid black; */
+    font-family: 'Pacifico', cursive;
+    height: fit-content;
+    margin: 20px 0px 0px 45px;
+    text-align: center;
+}
+.leftofbanner{
+    width: 250px;
+    height: fit-content;
+    /* border: 2px solid black; */
+    margin-left: 60px;
+    margin-top: 50px;
+}
+.leftofbanner h3{
+    font-size: 37px;
+    margin-left: 19px;
+    font-family: 'Caveat', cursive;
+}
+.leftofbanner li{
+    list-style-type: square;
+    color: grey;
+    padding: 3px 0 0px 0;
+}
+.leftofbanner li:hover{
+    color: black;
+}
+.banner{
+    font-family: 'Caveat', cursive;
+    position: relative;
+    margin-left: 35%;
+}
+.banner::before{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 340px;
+    display: block;
+    background: rgb(126, 121, 121);
+    left: -45%;
+    top: 55%;
+
+}
+.banner::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 310px;
+    display: block;
+    background: rgb(126, 121, 121);
+    left: 53%;
+    top: 55%;
+
+}
+  
